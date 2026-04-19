@@ -1,0 +1,16 @@
+name: My First GitHub Action
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a welcome message
+        run: echo "Hello Adineba! Your GitHub Action is working!"
+
+      - name: Show the date and time
+        run: date
+
+      - name: Done
+        run: echo "Workflow completed successfully!"
